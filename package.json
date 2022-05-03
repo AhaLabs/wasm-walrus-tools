@@ -1,0 +1,20 @@
+{
+  "name": "walrus",
+  "version": "0.0.1",
+  "description": "Tools for parsing wasm using walrus",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Willem Wyndham <willem@ahalabs.dev>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build:ts": "tsc",
+    "build:rs": "cargo build --release"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  },
+  "files": [
+    "dist/"
+  ]
+}
