@@ -8,11 +8,11 @@ not published on NPM yet, so install as GH dep.
 
 With npm:
 
-    npm i -S wasm-walrus-tools@AhaLabs/wasm-walrus-tools#1.0.0
+    npm i -S wasm-walrus-tools@AhaLabs/wasm-walrus-tools#v1.0.0
 
 With yarn:
 
-    yarn add wasm-walrus-tools@AhaLabs/wasm-walrus-tools#1.0.0
+    yarn add wasm-walrus-tools@AhaLabs/wasm-walrus-tools#v1.0.0
 
 Then use it in your app:
 
