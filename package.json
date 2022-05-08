@@ -1,6 +1,6 @@
 {
   "name": "walrus",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Tools for parsing wasm using walrus",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

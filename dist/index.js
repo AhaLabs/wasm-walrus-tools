@@ -13,18 +13,13 @@ exports.readCustomSection = void 0;
 const wasm_1 = require("./wasm");
 const walrus_1 = require("./walrus");
 let walrus = new walrus_1.Walrus();
-const UTF8_DECODER = new TextDecoder('utf-8');
 function readCustomSection(bytes, name) {
     return __awaiter(this, void 0, void 0, function* () {
         if (!walrus.instance) {
             const wasm_bytes = Buffer.from(wasm_1.WALRUS_BYTES, 'base64');
             yield walrus.instantiate(wasm_bytes);
         }
-        const res = walrus.readCustomSection(bytes, name);
-        if (res) {
-            return UTF8_DECODER.decode(res);
-        }
-        return res;
+        return walrus.readCustomSection(bytes, name);
     });
 }
 exports.readCustomSection = readCustomSection;
